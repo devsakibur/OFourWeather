@@ -1,5 +1,6 @@
 package com.example.ofourweather.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -13,7 +14,7 @@ class WeatherViewModel: ViewModel() {
     val weatherData = MutableLiveData<WeatherModel>()
 
 
-fun fetchData(){
+init{
     viewModelScope.launch {
         weatherData.value = weatherRepository.getWeatherData()
     }

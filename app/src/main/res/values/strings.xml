@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">O Four Weather</string>
     <string name="_32_u00b0c">32°C /</string>
-    <string name="wind">Wind</string>
+    <string name="wind">Pressure</string>
     <string name="u00b0c">°C</string>
 </resources>

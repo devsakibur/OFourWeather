@@ -7,7 +7,7 @@ class WeatherRepository {
 
 
     suspend fun getWeatherData() : WeatherModel{
-        val endUrl = "weather?q=London,uk&units=imperial&APPID=5e07cce60b7f2c623cf638a9d6b22293"
+        val endUrl = "weather?q=Dhaka&units=metric&appid=5e07cce60b7f2c623cf638a9d6b22293"
         return NetworkRetrofit.networkServiceApi.getWeatherApi(endUrl)
     }
 

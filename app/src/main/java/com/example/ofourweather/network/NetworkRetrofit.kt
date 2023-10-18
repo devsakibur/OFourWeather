@@ -1,5 +1,6 @@
 package com.example.ofourweather.network
 
+import com.example.ofourweather.model.ForecastModel
 import com.example.ofourweather.model.WeatherModel
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -18,6 +19,8 @@ interface NetworkServiceApi{
 
     @GET
     suspend fun getWeatherApi(@Url endUrl: String):WeatherModel
+    @GET
+    suspend fun getForecastApi(@Url endUrl: String):ForecastModel
 }
 
 
